@@ -41,26 +41,9 @@ class Home extends StatelessWidget {
           Text('Modern IT Source'),
           ElevatedButton(onPressed: (){
 
-            // showModalBottomSheet(context: context, builder: cts){
-            //   return Column(
-            //    children: [
-            //      Padding(padding:
-            //      EdgeInsets.symmetric(vertical: 10)),
-            //      Row(
-            //        mainAxisAlignment: MainAxisAlignment.start,
-            //       children: [
-            //         Text('Create/Signup'),
-            //         Divider(),
-            //
-            //       ],
-            //      ),
-            //      TextField()
-            //    ],
-            //   );
-            // }
-          },
+
               child: Text('Joined Us'),
-          )
+              ),
 
         ],
       ),

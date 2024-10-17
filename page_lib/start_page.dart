@@ -57,15 +57,17 @@ class Home extends StatelessWidget{
       child: Icon(Icons.message),
       onPressed: (){},
     ),
-    bottomNavigationBar: BottomNavigationBar(
-
-
-        currentIndex: 0,
-        items:[
-          BottomNavigationBarItem(icon: Icon(Icons.dashboard),label: "Dashboard",backgroundColor: Colors.blueAccent.shade400),
-          BottomNavigationBarItem(icon: Icon(Icons.percent),label: "Offers"),
-          BottomNavigationBarItem(icon: Icon(Icons.task),label: "Orders Details"),
-          BottomNavigationBarItem(icon: Icon(Icons.account_box),label: "Accounts"),
+        bottomNavigationBar: NavigationBar(
+          height: 70,
+            selectedIndex: 0,
+            onDestinationSelected: (int selectedIndex) {
+              // TODO: have to change state, will see after stateful widget
+            },
+            destinations:[
+          NavigationDestination(icon: Icon(Icons.dashboard),label: "Dashboard"),
+              NavigationDestination(icon: Icon(Icons.percent),label: "Offers"),
+              NavigationDestination(icon: Icon(Icons.task),label: "Orders Details"),
+              NavigationDestination(icon: Icon(Icons.account_box),label: "Accounts"),
         ],
     // onTap: (int index){
     //       if(index==0){
@@ -80,8 +82,9 @@ class Home extends StatelessWidget{
     //     if(index==3){
     //
     //     }}
+        ),
 
-    ),
+
         drawer: Drawer(
           elevation: 500,
           shadowColor: Colors.grey.shade700,
