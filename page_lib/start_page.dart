@@ -82,9 +82,7 @@ class Home extends StatelessWidget{
     //     if(index==3){
     //
     //     }}
-        ),
-
-
+        )
         drawer: Drawer(
           elevation: 500,
           shadowColor: Colors.grey.shade700,
