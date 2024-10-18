@@ -82,7 +82,7 @@ class Home extends StatelessWidget{
     //     if(index==3){
     //
     //     }}
-        )
+        ),
         drawer: Drawer(
           elevation: 500,
           shadowColor: Colors.grey.shade700,
@@ -109,7 +109,6 @@ class Home extends StatelessWidget{
            ),
         ),
       body:
-
       Scrollbar(
         child:ListView(
           padding: EdgeInsets.symmetric(vertical: 50, horizontal: 40),
@@ -122,10 +121,11 @@ class Home extends StatelessWidget{
                 width: 200,
                 fit: BoxFit.fill ,
                 'assets/webdemo.png'),
+            SizedBox(height: 15),
             Text(
                 textAlign: TextAlign.start,
                 'Website Development'),
-            SizedBox(height: 15),
+            SizedBox(height: 30),
 
             Image.asset(
                 alignment: Alignment.bottomLeft,
@@ -133,10 +133,11 @@ class Home extends StatelessWidget{
                 width: 200,
                 fit: BoxFit.fill,
                 'assets/app.jpg'),
+            SizedBox(height: 15),
             Text(
                 textAlign: TextAlign.start,
                 'Application Development'),
-            SizedBox(height: 15),
+            SizedBox(height: 30),
 
             Image.asset(
                 alignment: Alignment.bottomLeft,
@@ -144,10 +145,11 @@ class Home extends StatelessWidget{
                 width: 500,
                 fit: BoxFit.fill,
                 'assets/digitaldemo.png'),
+            SizedBox(height: 15),
             Text(
                 textAlign: TextAlign.start,
                 'Digital Marketing'),
-            SizedBox(height: 15),
+            SizedBox(height: 30),
 
             Image.asset(
                 alignment: Alignment.bottomLeft,
@@ -155,6 +157,7 @@ class Home extends StatelessWidget{
                 width: 250,
                 fit: BoxFit.fill,
                 'assets/grapdemo.jpg'),
+            SizedBox(height: 15),
             Text(
                 textAlign: TextAlign.start,
                 'Graphics Designing'),
