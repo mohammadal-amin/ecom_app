@@ -157,21 +157,19 @@ class Home extends StatelessWidget {
       ),
     ),
 
-
-      // bottomNavigationBar: BottomNavigationBar(
-      //   currentIndex: 1,
-      //     backgroundColor: Colors.black,
-      //     unselectedItemColor: Colors.teal.shade400,
-      //
-      //     items:[
-      //       BottomNavigationBarItem(
-      //           icon: Icon(Icons.web),label: "website"),
-      //       BottomNavigationBarItem(
-      //           icon: Icon(Icons.percent),label: "Offers"),
-      //       BottomNavigationBarItem(
-      //           icon: Icon(Icons.call),label: "helpline"),
-      //
-      //     ]),
+      bottomNavigationBar: NavigationBar(
+        height: 120,
+          backgroundColor: Colors.black,
+          selectedIndex: 1,
+          destinations:[
+            NavigationDestination(
+                icon: Icon(Icons.web),label: "website"),
+            NavigationDestination(
+                icon: Icon(Icons.percent),label: "Offers"),
+            NavigationDestination(
+                icon: Icon(Icons.call),label: "helpline"),
+          ],
+      ),
 
 
     );
