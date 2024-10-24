@@ -32,6 +32,7 @@ class Home extends StatelessWidget{
     return Scaffold(
       appBar: AppBar(
         title: Text("Welcome to Modern IT Source"),
+        titleTextStyle: TextStyle(color: Colors.white),
         shape: RoundedRectangleBorder(
           borderRadius:
           BorderRadius.only(
@@ -44,11 +45,11 @@ class Home extends StatelessWidget{
         toolbarHeight: 60,
         toolbarOpacity: 1,
         elevation: 30,
-        backgroundColor: Colors.blueAccent.shade400,
+        backgroundColor: Colors.black,
         actions: [
-          IconButton(onPressed: (){print("alaminmb808@gmail.com");}, icon: Icon(Icons.email)),
-          IconButton(onPressed: (){print("Location-Mirpur-1,Dhaka-1216");}, icon: Icon(Icons.location_city)),
-          IconButton(onPressed: (){print("Empty");}, icon: Icon(Icons.notifications)),
+          IconButton(onPressed: (){print("alaminmb808@gmail.com");}, icon: Icon(Icons.email),color: Colors.white),
+          IconButton(onPressed: (){print("Location-Mirpur-1,Dhaka-1216");}, icon: Icon(Icons.location_city),color: Colors.white),
+          IconButton(onPressed: (){print("Empty");}, icon: Icon(Icons.notifications),color: Colors.white),
         ],
         //array
       ),
@@ -58,6 +59,7 @@ class Home extends StatelessWidget{
       onPressed: (){},
     ),
         bottomNavigationBar: NavigationBar(
+          backgroundColor: Colors.black,
           height: 70,
             selectedIndex: 0,
             onDestinationSelected: (int selectedIndex) {
@@ -69,23 +71,15 @@ class Home extends StatelessWidget{
               NavigationDestination(icon: Icon(Icons.task),label: "Orders Details"),
               NavigationDestination(icon: Icon(Icons.account_box),label: "Accounts"),
         ],
-    // onTap: (int index){
-    //       if(index==0){
-    //         SnackBar("Welcome To Modern IT Source");
-    //       }
-    // if(index==1){
-    //
-    // }
-    //   if(index==2){
-    //
-    //   }
-    //     if(index==3){
-    //
-    //     }}
         ),
         drawer: Drawer(
+          backgroundColor: Colors.grey.shade600,
+          width: 200,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(12)
+          ),
           elevation: 500,
-          shadowColor: Colors.grey.shade700,
+          shadowColor: Colors.grey,
         child:ListView(
         children: [
           DrawerHeader(

@@ -22,6 +22,7 @@ class Home extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Lets Part of your idea'),
+        titleTextStyle: TextStyle(color: Colors.white),
         shape: RoundedRectangleBorder(
           borderRadius:
           BorderRadius.only(
@@ -29,7 +30,7 @@ class Home extends StatelessWidget {
               bottomRight: Radius.circular(15)
           ),
         ),
-        backgroundColor: Colors.blueAccent.shade400,
+        backgroundColor: Colors.black,
       ),
     body: Center(
       child: Column(mainAxisAlignment: MainAxisAlignment.start,
@@ -139,12 +140,15 @@ class Home extends StatelessWidget {
             )
           ),
         ),
+          SizedBox(
+            height: 15,
+          ),
           ElevatedButton(onPressed: (){},
               child:
-            Text('Signup'),
+            Text('Sign up'),
             style: ElevatedButton.styleFrom(
               textStyle: TextStyle(
-                fontSize: 20,
+                fontSize: 15,
 
               )
             ),
@@ -152,6 +156,24 @@ class Home extends StatelessWidget {
         ],
       ),
     ),
+
+
+      // bottomNavigationBar: BottomNavigationBar(
+      //   currentIndex: 1,
+      //     backgroundColor: Colors.black,
+      //     unselectedItemColor: Colors.teal.shade400,
+      //
+      //     items:[
+      //       BottomNavigationBarItem(
+      //           icon: Icon(Icons.web),label: "website"),
+      //       BottomNavigationBarItem(
+      //           icon: Icon(Icons.percent),label: "Offers"),
+      //       BottomNavigationBarItem(
+      //           icon: Icon(Icons.call),label: "helpline"),
+      //
+      //     ]),
+
+
     );
   }
 }
