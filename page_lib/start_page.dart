@@ -11,7 +11,6 @@ void main(){
   runApp(CustoApp());
 }
 class CustoApp extends StatelessWidget{
-
   @override
   Widget build(BuildContext context) {
 
@@ -73,7 +72,7 @@ class Home extends StatelessWidget{
         ],
         ),
         drawer: Drawer(
-          backgroundColor: Colors.grey.shade600,
+          backgroundColor: Colors.white,
           width: 200,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(12)
@@ -103,7 +102,7 @@ class Home extends StatelessWidget{
            ),
         ),
       body:
-      Scrollbar(
+        Scrollbar(
         child:ListView(
           padding: EdgeInsets.symmetric(vertical: 50, horizontal: 40),
         scrollDirection: Axis.vertical,

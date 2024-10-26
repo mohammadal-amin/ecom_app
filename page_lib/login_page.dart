@@ -158,7 +158,7 @@ class Home extends StatelessWidget {
     ),
 
       bottomNavigationBar: NavigationBar(
-        height: 120,
+        height: 90,
           backgroundColor: Colors.black,
           selectedIndex: 1,
           destinations:[
