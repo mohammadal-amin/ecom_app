@@ -214,8 +214,6 @@ class Home extends StatelessWidget {
                 controller: _passwordController,
                 decoration: InputDecoration(
                     counterText: '',
-
-
                     hintText: 'Password',
                     hintStyle: TextStyle(
                       fontWeight: FontWeight.w300,
